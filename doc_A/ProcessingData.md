@@ -26,10 +26,12 @@ public static void main(String[] args) {
 	System.out.println(count);
 }
 ```
-（待定：对应的大题）
+``待定：对应的大题``
 ---
 
 ## 2.排序字符串
+
+先转化为字符数组，sort排序后再转化为String字符串
 
 问题：给你字符串vsghvukdn,要求排序后输出
 
@@ -43,5 +45,5 @@ public static void main(String[] args) {
 	
 }
 ```
-(待定：对应的大题)
+``待定：对应的大题``
 ---
