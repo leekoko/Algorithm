@@ -1,10 +1,11 @@
-# 多个数据处理
+﻿# 多个数据处理
 
 这是利用数组的一些基础知识
 
 ---
 
 ## 1.数字互不相同
+
 数字互不相同就是利用数组脚标，来记录这个数字有没有出现过
 
 问题：判断3,4,2,1,6,0,5,3每个数字出现的次数
@@ -25,7 +26,22 @@ public static void main(String[] args) {
 	System.out.println(count);
 }
 ```
-
+（待定：对应的大题）
 ---
 
+## 2.排序字符串
 
+问题：给你字符串vsghvukdn,要求排序后输出
+
+```java
+
+public static void main(String[] args) {
+	String st="vsghvukdn";
+	char[] temp=st.toCharArray();
+	Arrays.sort(temp);
+	System.out.println(new String(temp));
+	
+}
+```
+(待定：对应的大题)
+---
