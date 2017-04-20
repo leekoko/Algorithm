@@ -16,7 +16,8 @@
 1. [数据处理](doc_A/ProcessingData.md)
 >1. 数字互不相同
 >1. 第二个缩进语句
-1. 打印图形  
+1. [String字符串处理](doc_A/ManageString.md)
+>1. 排序字符串
 
 ## 目录（第二部分）
 
