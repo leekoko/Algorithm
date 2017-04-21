@@ -29,4 +29,29 @@
 
 ---
 
+## 2.次方&开方
+
+这部分简单地介绍数学的一些函数的使用：pow sqrt      
+因为次方可能设计到大数运算，所以也简单介绍下multiply(大数的相乘法)
+
+问题：求9的三次方与开方的值，333333333333*3的次方，
+
+```java
+	public static void main(String[] args) {
+		System.out.println(Math.pow(9, 3));	   //次方
+		System.out.println(Math.sqrt(9));     //开方
+		
+		BigInteger bi=new BigInteger(String.valueOf("333333333333"));
+		System.out.println(bi.multiply(bi));   //大数平方
+		
+	}
+···
+
+---
+
+
+
+
+
+
 
