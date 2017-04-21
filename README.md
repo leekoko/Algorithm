@@ -19,7 +19,7 @@
 2. [String字符串处理](doc_A/ManageString.md)
 >1. 排序字符串
 >1. 分组字符串
-3. [数学知识](doc_A/Math.md)
+3. [数学基础](doc_A/Math.md)
 >1. 素数
 >1. 次方&开方
 
