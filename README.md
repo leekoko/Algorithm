@@ -16,6 +16,7 @@
 1. [数据处理](doc_A/ProcessingData.md)
 >1. 数字互不相同
 >1. 暴力破解法：合成&拆分
+>1. 循环删除
 2. [String字符串处理](doc_A/ManageString.md)
 >1. 排序字符串
 >1. 分组字符串
