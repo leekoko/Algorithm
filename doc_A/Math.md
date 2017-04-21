@@ -40,7 +40,7 @@
 	public static void main(String[] args) {
 		System.out.println(Math.pow(9, 3));	   //次方
 		System.out.println(Math.sqrt(9));     //开方
-		//相比toString，valueOf可以避免空指针异常
+
 		BigInteger bi=new BigInteger(String.valueOf("333333333333")); 
 		System.out.println(bi.multiply(bi));  //大数平方
 		
