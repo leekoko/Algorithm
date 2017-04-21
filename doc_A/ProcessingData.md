@@ -31,7 +31,9 @@ public static void main(String[] args) {
 
 ---
 
-## 2.合成法
+## 2.暴力破解法：合成&拆分
+
+### 合成法
 
 通过枚举每一项，进行合成，筛选后输出正确的数字（当对数字每一项进行操作的时候使用）
 
@@ -52,6 +54,26 @@ public static void main(String[] args) {
 }
 ```
 
+``待定：对应的大题``
+
+### 拆分法
+
+将一个数字的各项提取出来进行运算。相比合成法，拆分法对单个数字控制更小,但是写起来更简洁
+
+问题：输出从大到小的三位数偶数
+
+```java
+public static void main(String[] args) {
+	for (int i = 100; i < 1000; i++) {
+		int a=i/100;
+		int b=i/10%10;
+		int c=i%10;
+		if(i%2==0&&a>b&&b>c){
+			System.out.println(i);
+		}
+	}
+}
+```
 ``待定：对应的大题``
 
 ---
