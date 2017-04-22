@@ -73,5 +73,29 @@ public static void main(String[] args) {
 
 ---
 
+## 4.斐波那契数列
 
+斐波那契数列比较常见，这里用递归的方式来求。普通的递归速度很慢，但是用上数组存值之后可以加速很多。
 
+问题：求斐波那契数列的第10位值
+
+```java
+static int[] arr=new int[100000000];
+public static void main(String[] args) {
+	System.out.println(f(10));
+}
+
+public static int f(int num) {
+	if(arr[num]!=0){
+		return arr[num];
+	}
+	if(num==1||num==2){
+		return 1;
+	}
+	return arr[num]=f(num-1)+f(num-2);
+}
+```
+
+``待定：对应的大题``
+
+---
