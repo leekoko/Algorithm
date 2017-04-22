@@ -81,11 +81,25 @@ public static void main(String[] args) {
 ## 3.循环删除
 
 用数组存储数字，删除规定的数字，后面的值顶替上来，以此循环，一直到最后一个值就是结果
-利用
 
 问题：数字1，2，3，4，5   删除奇数位置上的数，形成的新串再删除奇数位置上的数，求最后留下的数
 
+分析：这道题涉及奇偶，需要利用要存入数是当前这个数的2倍，而不能用ArrayList，因为ArrayList删除一个坐标就会变一次，相当混乱。所以用普通数组+规律。
 
+```java
+public static void main(String[] args) {
+	int[] arr={1,2,3,4,5};
+	int size=arr.length; 
+	while(size>1){
+		//因为剩余偶数项，偶数比较少，所以直接去尾（奇数还得考虑加不加1）
+		size=size/2;       
+		for (int i = 0; i < size; i++) {
+			arr[i]=arr[i]*2;
+		}		
+	}
+	System.out.println(arr[0]);
+}
+```
 
 ``待定：对应的大题   猜字母``
 
