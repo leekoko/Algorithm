@@ -13,19 +13,19 @@
 
 ## 目录（第一部分）
 
-1. [数据处理](doc_A/ProcessingData.md)
+1. [数据处理](doc_A/ProcessingData.md)  
   1. 数字互不相同
   1. 暴力破解法：合成&拆分
   1. 循环删除
-2. [String字符串处理](doc_A/ManageString.md)
+2. [String字符串处理](doc_A/ManageString.md)  
   1. 排序字符串
   1. 分组字符串
-3. [数学基础](doc_A/Math.md)
+3. [数学基础](doc_A/Math.md)  
   1. 素数
   1. 次方&开方
   1. 交叉相乘
   1. 斐波那契数列
-4. [模拟真实](doc_A/Simulation.md)
+4. [模拟真实](doc_A/Simulation.md)  
   1. 机器人行走
 
 ## 目录（第二部分）
@@ -33,5 +33,5 @@
 1. 题目1  
   1.子有序列表1  
   2.子有序列表2
-1. 题目2
+1. 题目2  
 (第二部分才引入代码文件)
