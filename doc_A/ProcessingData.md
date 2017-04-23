@@ -105,7 +105,7 @@ public static void main(String[] args) {
 
 ---
 
-## 4.递归（一）
+## 4.递归
 
 递归就是通过调用自身将问题细化，一直循环到结点
 
