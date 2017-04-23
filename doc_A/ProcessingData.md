@@ -105,4 +105,75 @@ public static void main(String[] args) {
 
 ---
 
+## 4.递归
+
+递归就是通过调用自身将问题细化，一直循环到结点
+
+问题：使用递归的方式打印0到9
+
+分析：递归式可以在筛选条件里面，也可以在外面
+
+```java
+public static void main(String[] args) {
+	f(9);
+}
+
+public static void f(int num) {
+	if(num>0){
+		f(num-1);
+	}
+	System.out.println(num);
+}
+```
+
+``待定：对应的大题  ``
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
