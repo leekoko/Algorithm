@@ -53,8 +53,9 @@ public static void main(String[] args) {
 	}
 }
 ```
+[神奇算式](doc_B/Violence.md#1神奇算式) 
 
-``待定：对应的大题``
+---
 
 ### 拆分法
 
