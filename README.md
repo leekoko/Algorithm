@@ -14,21 +14,21 @@
 ## 目录（第一部分） 
 
 ### 1. 数据处理  
-- [数字互不相同](doc_A/ProcessingData.md#1.数字互不相同) 
-- [暴力破解法：合成&拆分](doc_A/ProcessingData.md#2.暴力破解法：合成&拆分) 
-- [循环删除](doc_A/ProcessingData.md#3.循环删除) 
-- [递归](doc_A/ProcessingData.md#4.递归)
-### 2. [String字符串处理](doc_A/ManageString.md) 
-- 排序字符串     
-- 分组字符串  
-### 3. [数学基础](doc_A/Math.md)    
-- 素数   
-- 次方&开方    
-- 交叉相乘 
-- 斐波那契数列  
-- 全排列  
-### 4. [模拟真实](doc_A/Simulation.md)  
-- 机器人行走    
+- [数字互不相同](doc_A/ProcessingData.md#1数字互不相同) 
+- [暴力破解法：合成&拆分](doc_A/ProcessingData.md#2暴力破解法合成拆分) 
+- [循环删除](doc_A/ProcessingData.md#3循环删除) 
+- [递归](doc_A/ProcessingData.md#4递归)
+### 2. String字符串处理  
+- [排序字符串](doc_A/ManageString.md#1排序字符串)     
+- [分组字符串](doc_A/ManageString.md#2分组字符串)    
+### 3. 数学基础  
+- [素数](doc_A/Math.md#1素数)      
+- [次方&开方](doc_A/Math.md#2次方开方)       
+- [交叉相乘](doc_A/Math.md#3交叉相乘)    
+- [斐波那契数列](doc_A/Math.md#4斐波那契数列)     
+- [全排列](doc_A/Math.md#5全排列)     
+### 4. 模拟真实
+- [机器人行走](doc_A/Simulation.md#1机器人行走)      
 
 ## 目录（第二部分）
 
