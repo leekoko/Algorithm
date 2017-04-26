@@ -13,11 +13,11 @@
 
 ## 目录（第一部分） 
 
-### 1. [数据处理](doc_A/ProcessingData.md)  
-- 数字互不相同 
-- 暴力破解法：合成&拆分
-- 循环删除 
-- 递归
+### 1. 数据处理  
+- [数字互不相同](doc_A/ProcessingData.md#1.数字互不相同) 
+- [暴力破解法：合成&拆分](doc_A/ProcessingData.md#2.暴力破解法：合成&拆分) 
+- [循环删除](doc_A/ProcessingData.md#3.循环删除) 
+- [递归](doc_A/ProcessingData.md#4.递归)
 ### 2. [String字符串处理](doc_A/ManageString.md) 
 - 排序字符串     
 - 分组字符串  
