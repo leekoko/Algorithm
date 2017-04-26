@@ -26,8 +26,7 @@ public static void main(String[] args) {
 	System.out.println(count);
 }
 ```
-
-``待定：对应的大题``
+[买不到的数目](doc_B/DifferentNum.md#1买不到的数目)
 
 ---
 
