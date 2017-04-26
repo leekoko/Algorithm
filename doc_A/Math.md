@@ -152,8 +152,36 @@ public static void f(int point) {
 
 ---
 
+## 6.最大公约数&最小公倍数
 
+这里使用辗转相除法来求最大公约数
 
+问题：求15，40的最大公约数&最小公倍数
 
+题目分析：  
+1. 关系式：将两个数交换位置进行递归，其中一个数mol另一个数不断缩小
+2. 而节点在于，当缩小那个位置为0的时候，返回另一个数，其为最大公约数  
+3. 最小公倍数=数a*数b/最大公约数
+
+```java
+public class Main {
+public static void main(String[] args) {
+	int num=f(15,40); //最大公约数
+	System.out.println(num);
+	System.out.println(15*40/num);  //最小公倍数
+}
+
+public static int f(int a, int b) {
+    if(a==0){
+        return b;
+    }
+    return f(b%a,a);
+}
+}
+```
+
+``待定：对应的大题``
+
+---
 
 
