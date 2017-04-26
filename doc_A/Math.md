@@ -99,3 +99,61 @@ public static int f(int num) {
 ``待定：对应的大题``
 
 ---
+
+## 全排列
+
+这里的全排列使用递归方式来实现
+
+问题：输入一个数n，列出从1到该数的所有排列情况
+
+题目分析：  
+1. 为了简化递归函数，除了变化的point之外，存储的数组都声明为全局的  
+2. 对1~num之间的数字一个个进行代入  
+3. 解决重复代入的问题，先判断该数字没出现过，再代入
+
+```java
+import java.util.Scanner;
+
+public class Main {
+static int num;
+static int[] arr;
+public static void main(String[] args) {
+	Scanner in=new Scanner(System.in);
+	num=in.nextInt();
+	arr=new int[num];
+	f(0);
+}
+
+public static void f(int point) {
+	if(point>=num){
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]);
+		}
+		System.out.println();
+		return;
+	}
+	for (int i = 1; i <=num; i++) {
+		boolean isExist=false;
+		for (int j = 0; j < point; j++) {
+			if(arr[j]==i){
+				isExist=true;
+			}
+		}
+		if(!isExist){
+			arr[point]=i;
+			f(point+1);
+		}
+	}
+}
+}
+```
+
+``待定：对应的大题``
+
+---
+
+
+
+
+
+
