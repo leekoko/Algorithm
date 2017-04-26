@@ -100,8 +100,7 @@ public static void main(String[] args) {
 	System.out.println(arr[0]);
 }
 ```
-
-``待定：对应的大题   猜字母``
+[猜字母](../doc_B/LoopDelete.md#1猜字母) 
 
 ---
 
