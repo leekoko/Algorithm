@@ -45,6 +45,14 @@
 		
 	}
 ```
+除了大数乘法，这里还有大浮点数的除法
+
+`` 	
+	BigDecimal a=new BigDecimal("1.5");
+	BigDecimal b=new BigDecimal("0.5");
+	System.out.println(a.divide(b));
+``
+
 
 ``待定：对应的大题``
 

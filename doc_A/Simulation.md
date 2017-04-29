@@ -43,6 +43,8 @@ public static void run(int point, int i) {
 }
 ```
 
-``待定：对应的大题``
+
+[机器人行走](../doc_B/RobotRun.md#1机器人行走) 
+
 
 ---
