@@ -142,8 +142,7 @@ public static void f(int begin, int end) {
 }
 ```
 
-
-``待定：对应的大题  ``
+[奇怪的比赛](../doc_B/Recursion.md#1奇怪的比赛) 
 
 ---
 
