@@ -44,7 +44,7 @@
 - [猜字母](doc_B/LoopDelete.md#1猜字母)  
 
 ### 4. 递归  
-- [奇怪的比赛](doc_B/OddMatch.md#1奇怪的比赛) 
+- [奇怪的比赛](doc_B/Recursion.md#1奇怪的比赛) 
 
 ### 5. 素数
 - [第100002个素数](doc_B/Prime.md#1第100002个素数)  
