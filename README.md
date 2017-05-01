@@ -29,6 +29,7 @@
 - [全排列](doc_A/Math.md#5全排列)     
 - [最大公约数&最小公倍数](doc_A/Math.md#6最大公约数最小公倍数)
 - [尼姆游戏](doc_A/Math.md#7尼姆游戏)
+- [不定方程](doc_A/Math.md#8不定方程)
 ### 4. 模拟真实
 - [机器人行走](doc_A/Simulation.md#1机器人行走)      
 
