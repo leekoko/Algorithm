@@ -142,6 +142,25 @@ public static void f(int begin, int end) {
 }
 ```
 
+问题2：3个A，2个B，能组成多少排列
+
+分析：这里是一个类似于完整无缺的组合，通过我们自己对它进行区分来构造差异性  
+这里的差异性就是取A没取B，或者取B没取A
+
+```java
+public static void main(String[] args) {
+	System.out.println(f(3,2));
+}
+
+public static int f(int m, int n) {
+	if(m==0||n==0){
+		return 1;
+	}
+	return f(m-1,n)+f(m,n-1);
+}
+```
+
+
 [奇怪的比赛](../doc_B/Recursion.md#1奇怪的比赛) 
 
 ---

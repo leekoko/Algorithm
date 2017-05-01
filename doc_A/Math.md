@@ -223,9 +223,9 @@ public static boolean f(int num) {
 问题：解不定方程4x-5y=7
 
 题目分析：  
-1.要求不定方程，先将它从本来的二层循环转化为单层循环  
-2.将 ax+by=c 转化为 ax=c-by  ，然后假设一个特殊解  
-3.通过%这个特殊解求出所有的y解，再通过y解求出对应的x解  
+1. 要求不定方程，先将它从本来的二层循环转化为单层循环  
+2. 将 ax+by=c 转化为 ax=c-by  ，然后假设一个特殊解  
+3. 通过%这个特殊解求出所有的y解，再通过y解求出对应的x解  
 
 ```java
 public static void main(String[] args) {
