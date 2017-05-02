@@ -142,10 +142,9 @@ public static void f(int begin, int end) {
 }
 ```
 
-问题2：3个A，2个B，能组成多少排列
+问题2：3个A，2个B，能组成多少排列   (两组有差异)
 
-分析：这里是一个类似于完整无缺的组合，通过我们自己对它进行区分来构造差异性  
-这里的差异性就是取A没取B，或者取B没取A
+分析：这里是有明显差异性：取A没取B，或者取B没取A
 
 ```java
 public static void main(String[] args) {
@@ -160,6 +159,29 @@ public static int f(int m, int n) {
 }
 ```
 
+问题3：在3个球中，任意取出2个（不放回），求有多少种不同的取法  (两组无差异性)
+
+分析：这里是一个类似于完整无缺的组合，通过我们自己对它进行区分来构造差异性  
+假设里面有一个奇特球，其差异性就是，取了一个球：取得到奇特球+取不到  
+
+```java
+	public static void main(String[] args) {
+		System.out.println(f(3,2));
+	}
+
+	public static int f(int n, int m) {
+		if(m==0){   //m是先完的数
+			return 1;
+		}
+		if(m==n){   //取的等于原有的，一种结果
+			return 1;
+		}
+		if(m>n){     //m很有可能大于n，这是不符合的情况  因为这个关系，不用判断n==0
+			return 0;
+		}
+		return f(n-1,m-1)+f(n-1,m);   //取了指定一个&没取指定那个
+	}
+```
 
 [奇怪的比赛](../doc_B/Recursion.md#1奇怪的比赛) 
 
