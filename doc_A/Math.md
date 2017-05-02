@@ -8,7 +8,7 @@
 
 素数的定义：除了1和它本身以外不再有其他因数的数称为质数（素数）
 
-问题：判断10是不是素数
+**问题：判断10是不是素数**
 
 ```java
 	public static boolean isPrime(int num) {
@@ -33,7 +33,7 @@
 这部分简单地介绍数学的一些函数的使用：pow sqrt      
 因为次方可能设计到大数运算，所以也简单介绍下multiply(大数的相乘法)
 
-问题：求9的三次方与开方的值，333333333333*3的次方
+**问题：求9的三次方与开方的值，333333333333*3的次方**
 
 ```java
 	public static void main(String[] args) {
@@ -62,7 +62,7 @@
 
 为什么要用到交叉相乘呢，当涉及分式的时候，如果直接用除法，非常容易导致精度变化，从而产生错误的结果
 
-问题：判断3/5*1/6是否等于1/10
+**问题：判断3/5*1/6是否等于1/10**
 
 ```java
 public static void main(String[] args) {
@@ -84,7 +84,7 @@ public static void main(String[] args) {
 
 斐波那契数列比较常见，这里用递归的方式来求。普通的递归速度很慢，但是用上数组存值之后可以加速很多。
 
-问题：求斐波那契数列的第10位值
+**问题：求斐波那契数列的第10位值**
 
 ```java
 static int[] arr=new int[100000000];
@@ -111,7 +111,7 @@ public static int f(int num) {
 
 这里的全排列使用递归方式来实现
 
-问题：输入一个数n，列出从1到该数的所有排列情况
+**问题：输入一个数n，列出从1到该数的所有排列情况**
 
 题目分析：  
 1. 为了简化递归函数，除了变化的point之外，存储的数组都声明为全局的  
@@ -163,7 +163,7 @@ public static void f(int point) {
 
 这里使用辗转相除法来求最大公约数
 
-问题：求15，40的最大公约数&最小公倍数
+**问题：求15，40的最大公约数&最小公倍数**
 
 题目分析：  
 1. 关系式：将两个数交换位置进行递归，其中一个数mol另一个数不断缩小
@@ -195,9 +195,9 @@ public static int f(int a, int b) {
 
 尼姆游戏是一种两个人玩的回合制数学战略游戏。游戏者轮流从一堆棋子中取走一个或者多个，最后不能再取的就是输家。
 
-问题：You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.  
+**问题：You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.  
 Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.  
-For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend
+For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend**
 
 题目分析：
 1. 这道题跟普通的尼姆游戏有一点不同，它要求的是最后一个拿的才是胜者  
@@ -220,7 +220,7 @@ public static boolean f(int num) {
 
 所谓不定方程，是指未知数的个数多于方程个数，且未知数受到某些限制（如要求是有理数、整数或正整数等等）的方程或方程组。  
 
-问题：解不定方程4x-5y=7
+**问题：解不定方程4x-5y=7**
 
 题目分析：  
 1. 要求不定方程，先将它从本来的二层循环转化为单层循环  

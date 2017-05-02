@@ -1,4 +1,4 @@
-# String字符串处理
+﻿# String字符串处理
 
 这是对String字符串操作的一些方法
 
@@ -8,7 +8,7 @@
 
 先转化为字符数组，sort排序后,再转化为String字符串
 
-问题：给你字符串vsghvukdn,要求排序后输出
+**问题：给你字符串vsghvukdn,要求排序后输出**
 
 ```java
 
@@ -29,7 +29,7 @@ public static void main(String[] args) {
 
 做一个截取方法，对其进行递归调用
 
-问题：对abcdefg进行三个一组，不足补0
+**问题：对abcdefg进行三个一组，不足补0**
 
 ```java
 public static void cut(String a) {
