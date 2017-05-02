@@ -32,3 +32,56 @@
 [源码](../SourceCode/OddMatch.java)
 
 ---
+
+## 2.加法划分  
+>如，对于正整数n=6，可以分划为：  
+>6  
+>5+1  
+>4+2, 4+1+1  
+>3+3, 3+2+1, 3+1+1+1  
+>2+2+2, 2+2+1+1,2+1+1+1+1  
+>1+1+1+1+1+1+1  
+>现在的问题是，对于给定的正整数n,编写算法打印所有划分。  
+>用户从键盘输入 n（范围1~10）  
+
+---
+
+题目分析：  
+1. 这里使用递归式生成，递归的参数是 现在剩余的数值，已用的数字量  
+2. 一旦剩余数为0，输出数字量之内的内容  
+3. 要解决交换重复的问题：统一前面大于后边，判断后边如果大于前边就continue，为了防止空指针异常，还需要对脚标进行限制  
+
+```java
+public static void main(String[] args) {
+	arr=new int[10000];
+	f(6,0);
+}
+public static void f(int num, int point) {
+	if(num==0){
+		for (int i = 0; i < point-1; i++) {
+			System.out.print(arr[i]+"+");
+		}
+		System.out.print(arr[point-1]);   //解决最后一个不用+问题
+		System.out.println();
+	}
+	
+	for (int i = num; i >0; i--) {
+		if(point>0&&i>arr[point-1]){
+			continue;
+		}
+		arr[point]=i;
+		f(num-i,point+1);
+	}
+}
+```
+[源码](../SourceCode/AddCut.java)
+
+---
+
+
+
+
+
+
+
+
