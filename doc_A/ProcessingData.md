@@ -185,6 +185,7 @@ public static int f(int m, int n) {
 
 [奇怪的比赛](../doc_B/Recursion.md#1奇怪的比赛)   
 [加法划分](../doc_B/Recursion.md#2加法划分)  
+[绳圈](../doc_B/Recursion.md#3绳圈)  
 
 ---
 

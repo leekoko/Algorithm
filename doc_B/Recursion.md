@@ -78,8 +78,47 @@ public static void f(int num, int point) {
 
 ---
 
+## 3.绳圈
+>今有 100 根绳子，当然会有 200 个绳头。   
+>如果任意取绳头两两配对，把所有绳头都打结连接起来。最后会形成若干个绳圈（不考虑是否套在一起）。   
+>我们的问题是：请计算最后将形成多少个绳圈的概率最大？   
 
+---
 
+题目分析：  
+1. 递归式子：m个绳子n个圈  
+第一种情况：f(n-1,m-1)    表示一条绳子自己相连  
+第二种情况：2*(n-1)*f(n-1,m)   不形成一个绳子的话有2*(m-1)种连法，其结果就是绳子少了一根，但是圈数没有减少  
+2. 结点：  
+n==m：表示各自为圈，有1种结果  
+m==1：表示形成一个大圈，有2*(n-1)*f(n-1,1)种结果  
+3. 要点：  
+返回值为double ， 用二维数组存储  
+
+```java
+	static double[][] arr=new double[1000][1000];
+	public static void main(String[] args) {
+		for (int i = 1; i <=10; i++) {
+			System.out.println(f(10,i));
+		}
+	}
+
+	public static double f(int n, int m) {
+		if(arr[n][m]!=0){
+			return arr[n][m];
+		}
+		if(n==m){     //这里n逐渐递减，总有和m相同的时候，所以不用判断m>n
+			return 1;
+		}
+		if(m==1){
+			return arr[n][m]=2*(n-1)*f(n-1,1);
+		}
+		return arr[n][m]=f(n-1,m-1)+2*(n-1)*f(n-1,m);    
+	}
+```
+[源码](../SourceCode/RopeCircle.java)
+
+---
 
 
 
