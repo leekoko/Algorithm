@@ -155,7 +155,7 @@ public static void f(int point) {
 }
 ```
 
-``待定：对应的大题``
+[ABC回溯全排列](../doc_B/FullPermutation.md#1ABC回溯全排列) 
 
 ---
 
