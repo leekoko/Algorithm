@@ -1,4 +1,4 @@
-﻿# 数据处理
+# 数据处理
 
 这是利用数组的一些基础知识
 
@@ -182,6 +182,30 @@ public static int f(int m, int n) {
 		return f(n-1,m-1)+f(n-1,m);   //取了指定一个&没取指定那个
 	}
 ```
+
+**问题4：求两个串的最大公共子序列的长度:"abc","xbacd"(选优情况)**
+
+分析：对比返回数量的递归式，其结点为：  
+1. 当长度为0的情况  
+2. 当头字母相同，返回后面的情况+数量1
+
+```java
+	public static void main(String[] args) {
+		System.out.println(f("abc","xbacd"));
+	}
+
+	public static int f(String st1, String st2) {
+		if(st1.length()==0||st2.length()==0){
+			return 0;
+		}
+		if(st1.charAt(0)==st2.charAt(0)){
+			return f(st1.substring(1),st2.substring(1))+1;
+		}
+		return Math.max(f(st1.substring(1),st2), f(st1,st2.substring(1)));
+	}
+```
+
+
 
 [奇怪的比赛](../doc_B/Recursion.md#1奇怪的比赛)   
 [加法划分](../doc_B/Recursion.md#2加法划分)  
