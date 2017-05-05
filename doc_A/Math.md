@@ -273,7 +273,7 @@ public static void main(String[] args) {
 		}
 		System.out.println((double)n/N);
 	}
-``
+```
 
 ``待定大题``
 
