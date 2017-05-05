@@ -245,13 +245,35 @@ public static void main(String[] args) {
 ---
 
 ## 9.随机算法
+随机算法就是用随机数，模拟出抽取的情况，最后算出概率的多少
 
-
-**问题：**
+**问题：30人的班级，出现生日重复的概率有多大？**
 
 题目分析：
-1. 这是第一个分析
+1. 设定足够多的班级，声明重复的班级为n
+2. 产生随机数，判断一但重复，n++
+3. 全部班级循环之后，算出重复班级所占的比例
 
+
+```java	
+	public static void main(String[] args) {
+		int N=1000*100;   //班级数量
+		int n=0;    //重复的班级数
+		for (int i = 0; i < N; i++) {
+			int[] arr=new int[365];   //一年的标记
+			for (int j = 0; j < 30; j++) {   //循环30个同学
+				int p=(int)(Math.random()*365);
+				if(arr[p]==1){
+					n++;
+					break;
+				}else{
+					arr[p]=1;
+				}
+			}
+		}
+		System.out.println((double)n/N);
+	}
+``
 
 ``待定大题``
 
