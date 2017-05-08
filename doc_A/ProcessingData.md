@@ -27,6 +27,7 @@ public static void main(String[] args) {
 }
 ```
 [买不到的数目](../doc_B/DifferentNum.md#1买不到的数目)
+[花朵数](../doc_B/DifferentNum.md#2花朵数)
 
 ---
 
