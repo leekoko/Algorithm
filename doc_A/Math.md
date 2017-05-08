@@ -275,7 +275,8 @@ public static void main(String[] args) {
 	}
 ```
 
-``待定大题``
+
+[运算24点数](../doc_B/random.md#1运算24点数)
 
 ---
 
