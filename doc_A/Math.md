@@ -253,7 +253,6 @@ public static void main(String[] args) {
 2. 产生随机数，判断一但重复，n++
 3. 全部班级循环之后，算出重复班级所占的比例
 
-
 ```java	
 	public static void main(String[] args) {
 		int N=1000*100;   //班级数量
@@ -279,9 +278,46 @@ public static void main(String[] args) {
 
 ---
 
+## 10.逆波兰表达式  
+逆波兰表达式又叫做后缀表达式。每一运算符都置于其运算对象之后，故称为后缀表示。  
 
+a+b ---> a,b,+  
+a+(b-c) ---> a,b,c,-,+  
+a+(b-c)*d ---> a,b,c,-,d,*,+  
+a+d*(b-c)--->a,d,b,c,-,*,+  
 
+**问题：输入一条逆波兰表达式，将它转化为中缀式**
 
+题目分析：  
+1. 声明一个Stack，Stack的使用方式：  
+ - 弹栈操作：stk.pop()         
+ - 压栈操作：stk.push()  
+2. 做循环，如果是符号，将数组从栈里面拿出来，处理后再压栈
+3. 如果是数字，直接压栈备用
+
+```java
+	public static void main(String[] args){
+		Scanner input=new Scanner(System.in);
+		String[]  arr=input.nextLine().split(",");
+		
+		Stack stk=new Stack();
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i].equals("+")||arr[i].equals("-")||arr[i].equals("*")||arr[i].equals("/")){
+				String b=(String)stk.pop();
+				String a=(String)stk.pop();
+				stk.push("("+a+arr[i]+b+")");
+			}else{
+				stk.push(arr[i]);
+			}
+		}
+		System.out.println(stk.pop());
+		
+	}
+```
+
+大题预备：21点数
+
+---
 
 
 

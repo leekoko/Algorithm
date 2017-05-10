@@ -31,6 +31,7 @@
 - [尼姆游戏](doc_A/Math.md#7尼姆游戏)
 - [不定方程](doc_A/Math.md#8不定方程)
 - [随机算法](doc_A/Math.md#9随机算法)
+- [逆波兰表达式](doc_A/Math.md#10逆波兰表达式)
 ### 4. 模拟真实
 - [机器人行走](doc_A/Simulation.md#1机器人行走)      
 
