@@ -211,6 +211,8 @@ public static boolean f(int num) {
 	return true;
 }
 ``` 
+[取球游戏](../doc_B/NimGame.md#1取球游戏)
+
 ``待定大题：高僧斗法``
 
 ---
