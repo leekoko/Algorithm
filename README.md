@@ -13,15 +13,15 @@
 
 ## 目录（第一部分） 
 
-### 1. 数据处理  
+### 1.数据处理  
 - [数字互不相同](doc_A/ProcessingData.md#1数字互不相同) 
 - [暴力破解法：合成&拆分](doc_A/ProcessingData.md#2暴力破解法合成拆分) 
 - [循环删除](doc_A/ProcessingData.md#3循环删除) 
 - [递归](doc_A/ProcessingData.md#4递归)
-### 2. String字符串处理  
+### 2.String字符串处理  
 - [排序字符串](doc_A/ManageString.md#1排序字符串)     
 - [分组字符串](doc_A/ManageString.md#2分组字符串)    
-### 3. 数学基础  
+### 3.数学基础  
 - [素数](doc_A/Math.md#1素数)      
 - [次方&开方](doc_A/Math.md#2次方开方)       
 - [交叉相乘](doc_A/Math.md#3交叉相乘)    
@@ -32,29 +32,41 @@
 - [不定方程](doc_A/Math.md#8不定方程)
 - [随机算法](doc_A/Math.md#9随机算法)
 - [逆波兰表达式](doc_A/Math.md#10逆波兰表达式)
-### 4. 模拟真实
+### 4.模拟真实
 - [机器人行走](doc_A/Simulation.md#1机器人行走)      
 
 ## 目录（第二部分）
-### 1. 数字互不相同
+### 1.数字互不相同
 - [买不到的数目](doc_B/DifferentNum.md#1买不到的数目)
+- [花朵数](doc_B/DifferentNum.md#2花朵数) 
 
-### 2. 暴力破解法
+### 2.暴力破解法
 - [神奇算式](doc_B/Violence.md#1神奇算式)  
-- 子有序列表2  
+- [熄灯问题](doc_B/Violence.md#2熄灯问题)  
 
-### 3. 循环删除  
+
+### 3.循环删除  
 - [猜字母](doc_B/LoopDelete.md#1猜字母)  
 
-### 4. 递归  
-- [奇怪的比赛](doc_B/Recursion.md#1奇怪的比赛) 
+### 4.递归  
+- [奇怪的比赛](doc_B/Recursion.md#1奇怪的比赛)  
+- [加法划分](doc_B/Recursion.md#2加法划分)  
+- [绳圈](doc_B/Recursion.md#3绳圈)  
 
-### 5. 素数
+### 5.素数
 - [第100002个素数](doc_B/Prime.md#1第100002个素数)  
 
-### 6. 机器人行走
+### 6.全排列
+- [ABC回溯全排列](doc_B/FullPermutation.md#1abc回溯全排列)  
+
+### 7.尼姆游戏
+- [取球游戏](doc_B/NimGame.md#1取球游戏)
+- [高僧斗法](doc_B/NimGame.md#2高僧斗法)
+
+### 8.随机算法
+- [运算24点数](doc_B/random.md#1运算24点数)
+
+### 9. 机器人行走
 - [机器人行走](doc_B/RobotRun.md#1机器人行走)  
 
 
-
-(第二部分才引入代码文件)
