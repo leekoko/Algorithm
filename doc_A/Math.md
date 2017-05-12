@@ -274,7 +274,36 @@ public static void main(String[] args) {
 		System.out.println((double)n/N);
 	}
 ```
+**问题2：[洗牌]将数组中的4个数随机打乱顺序**
 
+题目分析：  
+采用for循环遍历每一个数，跟随机数位置的数交换位置（for是为了更彻底洗牌），从而产生随机数组  
+
+```java
+	public static void main(String[] args) {
+		int[] arr={1,2,3,4};
+		for (int i = 0; i < 10; i++) {   //洗十次
+			f(arr);
+			show(arr);			
+		}
+	}
+
+	public static void show(int[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+
+	public static void f(int[] arr) {
+		for (int i = 0; i < arr.length; i++) {   //for循环洗得彻底一点
+			int ran=(int)(Math.random()*4);
+			int temp=arr[i];
+			arr[i]=arr[ran];
+			arr[ran]=temp;
+		}
+	}
+```
 
 [运算24点数](../doc_B/random.md#1运算24点数)
 
