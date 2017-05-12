@@ -248,7 +248,7 @@ public static void main(String[] args) {
 ## 9.随机算法
 随机算法就是用随机数，模拟出抽取的情况，最后算出概率的多少
 
-**问题：30人的班级，出现生日重复的概率有多大？**
+**问题1：30人的班级，出现生日重复的概率有多大？**
 
 题目分析：
 1. 设定足够多的班级，声明重复的班级为n
@@ -317,13 +317,13 @@ a+(b-c) ---> a,b,c,-,+
 a+(b-c)*d ---> a,b,c,-,d,*,+  
 a+d*(b-c)--->a,d,b,c,-,*,+  
 
-**问题：输入一条逆波兰表达式，将它转化为中缀式**
+**问题1：输入一条逆波兰表达式，将它转化为中缀式**
 
 题目分析：  
 1. 声明一个Stack，Stack的使用方式：  
  - 弹栈操作：stk.pop()         
  - 压栈操作：stk.push()  
-2. 做循环，如果是符号，将数组从栈里面拿出来，处理后再压栈
+2. 做循环，如果是符号，将数组从栈里面拿出来，处理后再压栈  
 3. 如果是数字，直接压栈备用
 
 ```java
@@ -342,11 +342,69 @@ a+d*(b-c)--->a,d,b,c,-,*,+
 			}
 		}
 		System.out.println(stk.pop());
-		
 	}
 ```
+_但是这种解法有缺陷，不规范的逆波兰会导致其报错_
 
-大题预备：21点数
+**问题2：运算逆波兰表达式：给出一个随意的逆波兰表达式，如果式子正确，则输出结果。式子不正确，则输出-1**
+
+题目分析：  
+1. 这道题主要是对逆波兰式子规范进行判断，其不符合的情况有：  
+ - 数字和字母的位置分配不正确  
+ - 相除出现小数  
+ - 运算后栈中数字残余  
+2. 问题1使用try catch捕捉异常，防止取空栈    
+3. 问题2就是检查不能除尽就抛出异常让前面捕捉  
+4. 问题3在输出前检查栈中是否只剩下一个数  
+
+```java
+public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String[] arr=input.nextLine().split(",");
+	System.out.println(f(arr));
+	
+}
+
+public static int f(String[] arr) {
+	Stack stack=new Stack();
+	try{
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i].equals("+")||arr[i].equals("-")||arr[i].equals("*")||arr[i].equals("/")){
+				int b=Integer.parseInt((String)stack.pop());
+				int a=Integer.parseInt((String)stack.pop());
+				stack.push(g(a,b,arr[i])+"");    //注意，存入int就不能再将其转化为int了，所以逆波兰表达式一般存入的是String
+			}else{
+				stack.push(arr[i]);
+			}
+		}
+		if(stack.size()==1){    //栈不清完也是错误情况
+			return Integer.parseInt((String)stack.pop());			
+		}else{
+			return -1;
+		}
+	}catch(Exception e){     //只要一pop不出来就捕捉异常
+		return -1;
+	}
+	
+}
+
+public static int g(int a, int b, String st) throws Exception {
+	if(st.equals("+")){
+		return a+b;
+	}else if(st.equals("-")){
+		return a-b;
+	}else if(st.equals("*")){
+		return a*b;
+	}else{
+		if(a%b!=0){
+			throw new Exception("no /");
+		}
+	}
+	return a/b;
+	
+}
+```
+_注意：运算后重新存入栈中要转化为字符串，否者后面再次转化为int会出错_
 
 ---
 
