@@ -26,6 +26,35 @@ public static void main(String[] args) {
 	System.out.println(count);
 }
 ```
+**问题：计算1-9的21次方，存进数组中**
+
+题目分析：  
+1. 这里用到了BigInteger与其运算方法bi.multiply(xxx);  
+
+```java
+	public static void main(String[] args) {
+		BigInteger[] arr=new BigInteger[10];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i]=f(i);
+		}
+		show(arr);
+	}
+
+	public static void show(BigInteger[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+	public static BigInteger f(int num) {
+		BigInteger bi=new BigInteger("1");  //相乘的初始化为1
+		for (int i = 0; i < 21; i++) {
+			bi=bi.multiply(new BigInteger(num+""));
+		}
+		return bi;
+	}
+```
+
 [买不到的数目](../doc_B/DifferentNum.md#1买不到的数目)  
 [花朵数](../doc_B/DifferentNum.md#2花朵数)  
 
