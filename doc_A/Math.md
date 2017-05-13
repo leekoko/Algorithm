@@ -408,7 +408,72 @@ _注意：运算后重新存入栈中要转化为字符串，否者后面再次�
 
 ---
 
+## 11.二叉树排序
 
+二叉树是每个节点最多有两个子树的树结构。通常子树被称作“左子树”和“右子树”。二叉树常被用于实现二叉查找树和二叉堆。
+
+**问题：使用二叉树排序数字100,50,80,60,30,90**
+
+题目分析：  
+1. 二叉树作为一个对象BiTree，其由int型的根部和BiTree的左根与右根  
+2. 首先，通过构造函数添加根部数据  
+3. 往第一个个根部添加分支，所以需要编写add方法  
+add方法需要判断当前分支是否为null，为null就放入，否则就调用分支的add方法  
+4. 遍历二叉树的方法：一直寻找左边，直到为空，输出中间内容，再找右边  
+
+```java
+public class Main {
+	public static void main(String[] args) {
+		BiTree biTree=new BiTree(100);
+		biTree.add(new BiTree(50));
+		biTree.add(new BiTree(80));
+		biTree.add(new BiTree(60));
+		biTree.add(new BiTree(30));
+		biTree.add(new BiTree(90));
+		
+		biTree.show();
+		
+	}
+}
+class BiTree{
+	int gen;
+	BiTree zuo;
+	BiTree you;
+	
+	public BiTree(int num) {
+		this.gen=num;
+	}
+
+	public void show() {
+		if(this.zuo!=null){
+			this.zuo.show();
+		}
+		System.out.println(this.gen);
+		if(this.you!=null){
+			this.you.show();
+		}
+	}
+
+	public void add(BiTree biTree) {
+		if(biTree.gen>this.gen){
+			if(this.zuo==null){
+				this.zuo=biTree;
+			}else{
+				this.zuo.add(biTree);
+			}
+		}else{
+			if(this.you==null){
+				this.you=biTree;
+			}else{
+				this.you.add(biTree);
+			}
+		}
+	}
+	
+}
+```
+
+---
 
 
 
