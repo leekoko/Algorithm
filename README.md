@@ -32,7 +32,7 @@
 - [不定方程](doc_A/Math.md#8不定方程)
 - [随机算法](doc_A/Math.md#9随机算法)
 - [逆波兰表达式](doc_A/Math.md#10逆波兰表达式)
-- [二叉树排序数字](doc_A/Math.md#11二叉树排序数字)
+- [二叉树排序](doc_A/Math.md#11二叉树排序)
 ### 4.模拟真实
 - [机器人行走](doc_A/Simulation.md#1机器人行走)      
 
