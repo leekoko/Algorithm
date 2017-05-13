@@ -8,7 +8,7 @@
 
 数字互不相同就是利用数组脚标，来记录这个数字有没有出现过
 
-**问题：判断3,4,2,1,6,0,5,3每个数字出现的次数**
+**问题1：判断3,4,2,1,6,0,5,3每个数字出现的次数**
 
 ```java
 public static void main(String[] args) {
@@ -26,7 +26,7 @@ public static void main(String[] args) {
 	System.out.println(count);
 }
 ```
-**问题：计算1-9的21次方，存进数组中**
+**问题2：计算1-9的21次方，存进数组中**
 
 题目分析：  
 1. 这里用到了BigInteger与其运算方法bi.multiply(xxx);  
@@ -52,6 +52,45 @@ public static void main(String[] args) {
 			bi=bi.multiply(new BigInteger(num+""));
 		}
 		return bi;
+	}
+```
+**问题3：遍历21位数字     （只知道每个数出现的次数，而不是具体位置）**
+
+题目分析：  
+1. 怎么遍历每一种情况呢，计算每个数字出现的次数  
+2. 所以需要两个参数，指针point和数量sum，执行递归方法  
+3. 递归是为，将21个可能一个个代进point位置里面，进行下一层递归（最后回溯函数）  
+4. 递归的结点是：1.当sum全部使用完毕之后，显示计数数组的内容  
+5. 当指针指向最后一个数字的时候，将剩余所有的数字都给它，sum清0  
+
+```java
+	public static void main(String[] args) {
+		int[] arr=new int[10];
+		f(arr,0,21);
+	}
+
+	public static void f(int[] arr, int point, int sum) {
+		if(sum==0){
+			show(arr);
+			return;
+		}
+		if(point==arr.length-1){
+			arr[point]=sum;
+			f(arr,point+1,0);
+			return;
+		}
+		for (int i = 0; i < sum; i++) {
+			arr[point]=i;
+			f(arr,point+1,sum-i);
+			arr[point]=0;
+		}
+	}
+
+	public static void show(int[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(i+":"+arr[i]);
+		}
+		System.out.println();
 	}
 ```
 

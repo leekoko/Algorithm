@@ -459,7 +459,7 @@ class BiTree{
 			if(this.zuo==null){
 				this.zuo=biTree;
 			}else{
-				this.zuo.add(biTree);
+				this.zuo.add(biTree);   //往分支再调用add方法
 			}
 		}else{
 			if(this.you==null){
