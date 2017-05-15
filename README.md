@@ -65,7 +65,7 @@
 - [高僧斗法](doc_B/NimGame.md#2高僧斗法)
 
 ### 8.随机算法
-- [运算24点数](doc_B/random.md#1运算24点数)
+- [运算24点数](doc_B/Random.md#1运算24点数)
 
 ### 9. 机器人行走
 - [机器人行走](doc_B/RobotRun.md#1机器人行走)  
