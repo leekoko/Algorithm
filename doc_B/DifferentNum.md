@@ -151,6 +151,10 @@ public static BigInteger ciFan(int num) {      //计算每个数的21次方
 }
 
 ```
+_答案是：  
+128468643043731391252  
+449177399146038697307_  
+
 [源码](../SourceCode/FlowerNum.java)
 
 ---
