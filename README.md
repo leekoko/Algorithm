@@ -44,7 +44,7 @@
 ### 2.暴力破解法
 - [神奇算式](doc_B/Violence.md#1神奇算式)  
 - [熄灯问题](doc_B/Violence.md#2熄灯问题)  
-
+- [讨厌的青蛙](doc_B/Violence.md#3讨厌的青蛙)  
 
 ### 3.循环删除  
 - [猜字母](doc_B/LoopDelete.md#1猜字母)  
