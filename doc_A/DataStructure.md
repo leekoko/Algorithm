@@ -20,7 +20,7 @@ public static void main(String[] args) {
 	}
 }
 ```
-[出栈次序](../doc_B/doc_B/Stack.md#1出栈次序)  
-[铁轨](../doc_B/doc_B/Stack.md#2铁轨)  
+[出栈次序](../doc_B/Stack.md#1出栈次序)  
+[铁轨](../doc_B/Stack.md#2铁轨)  
 
 ---
