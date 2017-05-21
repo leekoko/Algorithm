@@ -111,13 +111,19 @@ public static int f(int num) {
 
 
 ```java
-下次完成
-
+	public static void main(String[] args) {
+		int[] arr=new int[1000*1000];
+		arr[1]=1;
+		arr[2]=1;
+		Scanner input=new Scanner(System.in);
+		int num=input.nextInt();
+		for (int i = 3; i <= num; i++) {
+			arr[i]=arr[i-1]+arr[i-2];
+			arr[i]=arr[i]%10007;
+		}
+		System.out.println(arr[num]);
+	}
 ```
-
-
-
-``待定：对应的大题``
 
 ---
 
