@@ -33,6 +33,7 @@
 - [随机算法](doc_A/Math.md#9随机算法)
 - [逆波兰表达式](doc_A/Math.md#10逆波兰表达式)
 - [二叉树排序](doc_A/Math.md#11二叉树排序)
+- [约瑟夫环](doc_A/Math.md#12约瑟夫环)
 ### 4.模拟真实
 - [机器人行走](doc_A/Simulation.md#1机器人行走)  
 - [计算机模拟](doc_A/Simulation.md#2计算机模拟)    

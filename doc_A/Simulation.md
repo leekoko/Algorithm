@@ -51,7 +51,7 @@ public static void run(int point, int i) {
 
 一般都是模拟计算机的一些操作  
 
-**你在输入文章的时候，键盘上的Home键和End键出了问题，会不定时的按下。给你一段按键的文本，其中'['表示Home键，']'表示End键，输出这段悲剧的文本。**  
+**问题：你在输入文章的时候，键盘上的Home键和End键出了问题，会不定时的按下。给你一段按键的文本，其中'['表示Home键，']'表示End键，输出这段悲剧的文本。**  
 
 Sample Input  
 This_is_a_[Beiju]_text  
