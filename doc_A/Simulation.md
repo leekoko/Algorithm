@@ -1,27 +1,27 @@
-# Ä£ÄâÕæÊµ
+# æ¨¡æ‹ŸçœŸå®
 
-Ò»Ğ©Éú»îÖĞµÄ»úĞµ±à³Ì£¬Ò»°ãÎªĞĞ×ßÖ®ÀàÖªÊ¶µã
+ä¸€äº›ç”Ÿæ´»ä¸­çš„æœºæ¢°ç¼–ç¨‹ï¼Œä¸€èˆ¬ä¸ºè¡Œèµ°ä¹‹ç±»çŸ¥è¯†ç‚¹
 
 ---
 
-## 1.»úÆ÷ÈËĞĞ×ß
+## 1.æœºå™¨äººè¡Œèµ°
 
-ÕâÊÇÍ¨¹ı·½ÏòµÄ±ä»¯£¬À´ÅĞ¶Ï±ä»¯µÄÊÇx»¹ÊÇy
+è¿™æ˜¯é€šè¿‡æ–¹å‘çš„å˜åŒ–ï¼Œæ¥åˆ¤æ–­å˜åŒ–çš„æ˜¯xè¿˜æ˜¯y
 
-**ÎÊÌâ£ºL±íÊ¾×ó×ª£¬R±íÊ¾ÓÒ×ª£¬L5R3R1 ÃüÁîÖ®ºóÒÆ¶¯µÄ¾àÀë£¨±£ÁôÁ½Î»Ğ¡Êı£©**  
-·ÖÎö£ºÕâ²»ÊÇ¼ò±ãµÄ·½·¨£¬µ«¾¡Á¿×öµ½ÈİÒ×Àí½â
+**é—®é¢˜ï¼šLè¡¨ç¤ºå·¦è½¬ï¼ŒRè¡¨ç¤ºå³è½¬ï¼ŒL5R3R1 å‘½ä»¤ä¹‹åç§»åŠ¨çš„è·ç¦»ï¼ˆä¿ç•™ä¸¤ä½å°æ•°ï¼‰**  
+åˆ†æï¼šè¿™ä¸æ˜¯ç®€ä¾¿çš„æ–¹æ³•ï¼Œä½†å°½é‡åšåˆ°å®¹æ˜“ç†è§£
 
 ```java
-static int x=0;  //°Ñ×ø±êµ¥¶ÀÌáÈ¡£¬¿ÉÒÔ×÷Îª¶ÔÏóÊôĞÔ
+static int x=0;  //æŠŠåæ ‡å•ç‹¬æå–ï¼Œå¯ä»¥ä½œä¸ºå¯¹è±¡å±æ€§
 static int y=0;
 public static void main(String[] args) {
 
 	int point=0;
-	//×ó±ßÓÃ+3£¬±ÜÃâ²úÉú¸ºÊı£¬ÒòÎª·½ÏòÓÃ0~3±íÊ¾£¬ËùÒÔ%4
-	point=(point+3)%4;  //×ó×ª  ·½ÏòÖ»ÓĞÒ»¸ö£¬Ò»¸öÊı×Ö±íÊ¾
-	run(point,5);  //×ß5²½
+	//å·¦è¾¹ç”¨+3ï¼Œé¿å…äº§ç”Ÿè´Ÿæ•°ï¼Œå› ä¸ºæ–¹å‘ç”¨0~3è¡¨ç¤ºï¼Œæ‰€ä»¥%4
+	point=(point+3)%4;  //å·¦è½¬  æ–¹å‘åªæœ‰ä¸€ä¸ªï¼Œä¸€ä¸ªæ•°å­—è¡¨ç¤º
+	run(point,5);  //èµ°5æ­¥
 	
-	point=(point+1)%4;  //ÓÒ×ª  
+	point=(point+1)%4;  //å³è½¬  
 	run(point,3);  
 	
 	point=(point+1)%4; 
@@ -31,7 +31,7 @@ public static void main(String[] args) {
 		
 }
 public static void run(int point, int i) {
-	if(point==0){ //ÏòÉÏ
+	if(point==0){ //å‘ä¸Š
 		x=x-i;
 	}else if(point==1){
 		y=y+i;
@@ -43,8 +43,66 @@ public static void run(int point, int i) {
 }
 ```
 
+[æœºå™¨äººè¡Œèµ°](../doc_B/RobotRun.md#1æœºå™¨äººè¡Œèµ°) 
 
-[»úÆ÷ÈËĞĞ×ß](../doc_B/RobotRun.md#1»úÆ÷ÈËĞĞ×ß) 
+---
 
+## 2.è®¡ç®—æœºæ¨¡æ‹Ÿ  
+
+ä¸€èˆ¬éƒ½æ˜¯æ¨¡æ‹Ÿè®¡ç®—æœºçš„ä¸€äº›æ“ä½œ  
+
+**ä½ åœ¨è¾“å…¥æ–‡ç« çš„æ—¶å€™ï¼Œé”®ç›˜ä¸Šçš„Homeé”®å’ŒEndé”®å‡ºäº†é—®é¢˜ï¼Œä¼šä¸å®šæ—¶çš„æŒ‰ä¸‹ã€‚ç»™ä½ ä¸€æ®µæŒ‰é”®çš„æ–‡æœ¬ï¼Œå…¶ä¸­'['è¡¨ç¤ºHomeé”®ï¼Œ']'è¡¨ç¤ºEndé”®ï¼Œè¾“å‡ºè¿™æ®µæ‚²å‰§çš„æ–‡æœ¬ã€‚**  
+
+Sample Input  
+This_is_a_[Beiju]_text  
+[[]][][]Happy_Birthday_to_Tsinghua_University  
+Sample Output  
+BeijuThis_is_a__text  
+Happy_Birthday_to_Tsinghua_University  
+
+é¢˜ç›®åˆ†æï¼š   
+æœ¬é¢˜å°±æ˜¯ä¸€é‡åˆ°[ / ] å°±å¯¹å‰é¢çš„å†…å®¹æ·»åŠ åˆ°é“¾è¡¨ï¼Œè‡³äºæ·»åŠ åˆ°å“ªä¸€ä¸ªä½ç½®ï¼Œé‚£å°±éœ€è¦çœ‹æ˜¯å¦æŒ‰ä¸‹[ï¼Œæ·»åŠ å®Œä¹‹åå†å†³å®šæŒ‰ä¸‹[  
+1. åˆ™å°†å‰é¢å­˜å‚¨çš„StringBuilderå­˜è¿›LinkedListä¸­ï¼Œè‡³äºå­˜å‰é¢è¿˜æ˜¯åé¢ï¼Œå°±åˆ¤æ–­homeé”®æŒ‰è¿‡æ²¡æœ‰ï¼ˆä¹‹å‰çš„æ˜¯[æŒ‰è¿‡æ²¡æœ‰ï¼Œè¿˜æ˜¯å¤–é¢çš„ï¼‰  
+2. æ¯æ¬¡æ·»åŠ å®ŒLinkedListä¹‹åéƒ½è¦å°†StringBuilderæ¸…ç©º  
+3. æœ€åStringBuilderä¹‹ä¸­è‚¯å®šè¿˜æœ‰ä¸œè¥¿ï¼Œè¿˜éœ€è¦å†è¿½åŠ ä¸€æ¬¡  
+
+```java
+public static void main(String[] args) {
+	
+	Scanner input=new Scanner(System.in);
+	String t=input.nextLine();
+	char[] arr=t.toCharArray();
+	StringBuilder sb=new StringBuilder();
+	boolean isJin=false;
+	LinkedList<StringBuilder> ll=new LinkedList<StringBuilder>();
+	
+	for (int i = 0; i < arr.length; i++) {
+		if(arr[i]=='['){
+			f(sb, isJin, ll);   //æ·»åŠ å‰é¢çš„å†…å®¹
+			sb=new StringBuilder();
+			isJin=true;   //ç¡®å®šæ˜¯å¦æŒ‰ä¸‹
+		}else if (arr[i]==']') {
+			f(sb, isJin, ll);
+			sb=new StringBuilder();
+			isJin=false;
+		}else{
+			sb.append(arr[i]);
+		}
+	}
+	
+	f(sb, isJin, ll);
+	for (int j = 0; j < ll.size(); j++) {
+		System.out.print(ll.get(j).toString());
+	}
+}
+
+private static void f(StringBuilder sb, boolean isJin, LinkedList<StringBuilder> ll) {
+	if(isJin){
+		ll.addFirst(sb);
+	}else{
+		ll.addLast(sb);
+	}
+}
+```
 
 ---

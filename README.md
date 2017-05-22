@@ -34,7 +34,8 @@
 - [逆波兰表达式](doc_A/Math.md#10逆波兰表达式)
 - [二叉树排序](doc_A/Math.md#11二叉树排序)
 ### 4.模拟真实
-- [机器人行走](doc_A/Simulation.md#1机器人行走)      
+- [机器人行走](doc_A/Simulation.md#1机器人行走)  
+- [计算机模拟](doc_A/Simulation.md#2计算机模拟)    
 ### 5.数据结构  
 - [栈](doc_A/DataStructure.md#1栈)      
 
