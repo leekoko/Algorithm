@@ -43,7 +43,9 @@ public static void run(int point, int i) {
 }
 ```
 
-[机器人行走](../doc_B/RobotRun.md#1机器人行走) 
+[机器人行走](../doc_B/RobotRun.md#1机器人行走)  
+[兰顿蚂蚁](../doc_B/RobotRun.md#2兰顿蚂蚁) 
+
 
 ---
 
