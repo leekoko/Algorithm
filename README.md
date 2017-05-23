@@ -18,7 +18,8 @@
 - [暴力破解法：合成&拆分](doc_A/ProcessingData.md#2暴力破解法合成拆分) 
 - [循环删除](doc_A/ProcessingData.md#3循环删除) 
 - [递归](doc_A/ProcessingData.md#4递归)
-### 2.String字符串处理  
+- [进制转换](doc_A/ProcessingData.md#5进制转换)  
+### 2.String字符串处理   
 - [排序字符串](doc_A/ManageString.md#1排序字符串)     
 - [分组字符串](doc_A/ManageString.md#2分组字符串)    
 ### 3.数学基础  
@@ -58,27 +59,30 @@
 - [加法划分](doc_B/Recursion.md#2加法划分)  
 - [绳圈](doc_B/Recursion.md#3绳圈)  
 
-### 5.素数
+### 5.进制转换  
+- [十六进制转十进制](doc_B/Decimal.md#1十六进制转十进制) 
+
+### 6.素数
 - [第100002个素数](doc_B/Prime.md#1第100002个素数)  
 
-### 6.全排列
+### 7.全排列
 - [ABC回溯全排列](doc_B/FullPermutation.md#1abc回溯全排列)  
 
-### 7.尼姆游戏
+### 8.尼姆游戏
 - [取球游戏](doc_B/NimGame.md#1取球游戏)
 - [高僧斗法](doc_B/NimGame.md#2高僧斗法)
 
-### 8.随机算法
+### 9.随机算法
 - [运算24点数](doc_B/Random.md#1运算24点数)
 
-### 9.约瑟夫环  
+### 10.约瑟夫环  
 - [分糖果](doc_B/Joseph.md#1分糖果数)
 
-### 10.机器人行走
+### 11.机器人行走
 - [机器人行走](doc_B/RobotRun.md#1机器人行走)  
 - [兰顿蚂蚁](doc_B/RobotRun.md#2兰顿蚂蚁)  
 
-### 11.栈  
+### 12.栈  
 - [出栈次序](doc_B/Stack.md#1出栈次序)
 - [铁轨](doc_B/Stack.md#2铁轨)
 

@@ -276,17 +276,39 @@ public static int f(int m, int n) {
 	}
 ```
 
-
-
 [奇怪的比赛](../doc_B/Recursion.md#1奇怪的比赛)   
 [加法划分](../doc_B/Recursion.md#2加法划分)  
 [绳圈](../doc_B/Recursion.md#3绳圈)  
 
 ---
 
+## 5.进制转换
 
 
+**问题：将A1从16进制转化为10进制**
 
+分析：  
+1.  A=10* 16的1次方   +    1 *16的0次方   =161  
+2.  次方的多少取决于当前的这个数后面有几个0  
+
+```java
+public static void main(String[] args) {
+	String st="A1";
+	char[] arr=st.toCharArray();
+	long sum=0;
+	int len=arr.length;
+	for (int i = 0; i < arr.length; i++) {
+		if(arr[i]=='A'){
+			sum+=10*(Math.pow(16, len-i-1));
+		}else{
+			sum+=Integer.parseInt(arr[i]+"")*(Math.pow(16, len-1-i));  //当前这个数*16的0个数的次方
+		}
+	}
+	System.out.println(sum);
+}
+```
+
+[十六进制转十进制](../doc_B/Decimal.md#1十六进制转十进制)  
 
 
 
