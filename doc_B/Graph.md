@@ -125,6 +125,10 @@ public static void init() {
 	}
 }
 ```
+_要点注意：  
+1. 画线的方式采用定义x，y。对x，y改变位置所得   
+2. 因为长度涉及到圈数，为了方便运算，定义一个独立的index随圈数的遍历进行变化(不能直接用num ),记得用index来表示当前圈数_  
+
 [源码](../SourceCode/Graph10.java)
 
 ---
