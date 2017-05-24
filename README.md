@@ -38,6 +38,7 @@
 ### 4.模拟真实
 - [机器人行走](doc_A/Simulation.md#1机器人行走)  
 - [计算机模拟](doc_A/Simulation.md#2计算机模拟)    
+- [图形打印](doc_A/Simulation.md#3图形打印)    
 ### 5.数据结构  
 - [栈](doc_A/DataStructure.md#1栈)      
 
@@ -82,7 +83,10 @@
 - [机器人行走](doc_B/RobotRun.md#1机器人行走)  
 - [兰顿蚂蚁](doc_B/RobotRun.md#2兰顿蚂蚁)  
 
-### 12.栈  
+### 12.图形打印
+- [打印十字图](doc_B/Graph.md#1打印十字图)  
+
+### 13.栈  
 - [出栈次序](doc_B/Stack.md#1出栈次序)
 - [铁轨](doc_B/Stack.md#2铁轨)
 

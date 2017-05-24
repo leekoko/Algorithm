@@ -42,10 +42,8 @@ public static void run(int point, int i) {
 	}
 }
 ```
-
 [机器人行走](../doc_B/RobotRun.md#1机器人行走)  
 [兰顿蚂蚁](../doc_B/RobotRun.md#2兰顿蚂蚁) 
-
 
 ---
 
@@ -108,3 +106,42 @@ private static void f(StringBuilder sb, boolean isJin, LinkedList<StringBuilder>
 ```
 
 ---
+
+## 2.图形打印  
+
+图像打印的方式就是根据输入的数量，寻找其与图形的关系，先布背景，再布图形  
+
+**问题：打印7行7列的内带十字架图形**  
+
+题目分析：   
+1. 新建一个数组  
+2. 初始化背景
+3. 根据中间点绘画出图形，其中间点的位置算式可以根据边长调试获得  
+
+```java
+	static char[][] arr;
+	public static void main(String[] args) {
+		arr=new char[7][7];
+		int mid=3;   //确定中间点位置，一般通过调试获得
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				arr[i][j]='.';
+			}
+		}
+		for (int i = 0; i < 5; i++) {
+			arr[mid-2+i][mid]='$';
+			arr[mid][mid-2+i]='$';
+		}
+		show();
+	}
+	//构造完数组内容之后，统一打印数组的内容
+	public static void show() {
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j]);
+			}
+			System.out.println();
+		}
+	}
+```
+[打印十字图](../doc_B/Graph.md#1打印十字图)  
