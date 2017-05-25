@@ -209,5 +209,95 @@
 ---
 
 题目分析：  
-1. 下次输入
+1. 首先获取数据，获取水稻位置的时候，将其存进对象里面。因为用到对象，所以需要用ArrayList存储  
+2. 寻找头两个点：  
+计算两个点的跨度  
+3. 筛选不符合的情况：  
+当走之前就已经再田里（>=1）,跳过这个循环  
+当到max的前一步之前（max初始化为2），如果已经越界了跳过循环（x跳x层的，y跳y层的）  
+符合的话进行计算步数  
+4. 计算步数方法：  
+只要没越界， 无限循环。拿出第一步的xy位置，每次都往上面添加距离。    添加完之后判断新的点有没有存在（判断存不存在函数），不存在则取消这次跳动，步数归0  
+5. 筛选返回的步数  
+调用步数方法之后会返回一个步数，判断其是否比最大的小，并且>2，如果符合的话，输出最大步数  
 
+```java
+public class Main {
+	static ArrayList<Sign> al;
+	static int r;
+	static int c;
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		r=input.nextInt();
+		c=input.nextInt();
+		int num=input.nextInt();
+		al=new ArrayList<Sign>();
+		int max=2;   //初始化最大步数为2
+		for (int i = 0; i < num; i++) {
+			al.add(new Sign(input.nextInt(), input.nextInt()));
+		}
+		for (int i = 0; i < al.size(); i++) {
+			for (int j = i+1; j < al.size(); j++) {
+				int dX=al.get(j).x-al.get(i).x;
+				int dY=al.get(j).y-al.get(i).y;
+				int tX=al.get(i).x-dX;
+				int tY=al.get(i).y-dY;
+				if(tX>=1&&tY>=1){
+					continue;
+				}
+				if(al.get(i).x+dX*(max-1)>r||al.get(i).y+dY*(max-1)>c){
+					continue;
+				}
+				if(al.get(i).x==6&&al.get(i).y==1){
+					System.out.println("stop");
+				}
+				int step=f(al.get(i),dX,dY);
+				if(step>max){
+					max=step;
+				}
+			}
+		}
+		System.out.println(max);
+	}
+	public static int f(Sign sign, int dX, int dY) {
+		int x=sign.x;
+		int y=sign.y;
+		int step=0;
+		while(x<=r&&y<=c){
+			if(!isCao(x,y)){
+				return 0;
+			}
+			x=x+dX;
+			y=y+dY;
+			step++;   //多处一步补起点没有计算
+		}
+		return step;
+	}
+	private static boolean isCao(int x, int y) {
+		for (int i = 0; i < al.size(); i++) {
+			if(al.get(i).x==x&&al.get(i).y==y){
+				return true;
+			}
+		}
+		return false;
+	}
+
+}
+class Sign{
+	int x;
+	int y;
+	public Sign(int x,int y) {
+		this.x=x;
+		this.y=y;
+	}
+	
+}
+```
+要点注意：
+
+	1. 先测试小数据，再测试大数据
+	2. 根据测试数据一边调整程序精度。
+
+[源码](../SourceCode/Frog.java)  
+
+---
