@@ -284,7 +284,6 @@ public static int f(int m, int n) {
 
 ## 5.进制转换
 
-
 **问题：将A1从16进制转化为10进制**
 
 分析：  
@@ -307,8 +306,11 @@ public static void main(String[] args) {
 	System.out.println(sum);
 }
 ```
-
 [十六进制转十进制](../doc_B/Decimal.md#1十六进制转十进制)  
+[十六进制转八进制](../doc_B/Decimal.md#2十六进制转八进制)  
+
+---
+
 
 
 
