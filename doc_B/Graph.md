@@ -154,3 +154,45 @@ public static void init() {
 >CPU消耗  < 1000ms  
 
 ---
+
+题目分析：  
+1. 先初始化图形背景  
+2. 确定一个起始点，利用高的变化打印\  
+3. 同上打印/，注意起始点-1:由高度确定的起点位置  
+
+```java
+	public static void main(String[] args) {
+			Scanner input=new Scanner(System.in);
+			int kuan=input.nextInt();
+			int height=input.nextInt();
+			int width=height-1+kuan;
+			
+			char[][] arr=new char[height][width];
+			for (int i = 0; i < arr.length; i++) {
+				for (int j = 0; j < arr[i].length; j++) {
+					arr[i][j]='.';
+				}
+			}
+			
+			for (int i = 0; i < arr.length; i++) {
+				for (int j = 0; j < kuan; j++) {
+					arr[i][j+i]='*';
+				}
+				for (int j = 0; j < kuan; j++) {
+					arr[i][width-kuan-i+j]='*';
+				}
+			}
+			//打印图案
+			for (int i = 0; i < arr.length; i++) {
+				for (int j = 0; j < arr[i].length; j++) {
+					System.out.print(arr[i][j]);
+				}
+				System.out.println();
+			}
+		}
+```
+[源码](../SourceCode/GraphX.java)
+
+---
+
+
