@@ -145,4 +145,4 @@ private static void f(StringBuilder sb, boolean isJin, LinkedList<StringBuilder>
 	}
 ```
 [打印十字图](../doc_B/Graph.md#1打印十字图)  
-[打印大X](../doc_B/Graph.md#2打印大X)  
+[打印大X](../doc_B/Graph.md#2打印大x)  
