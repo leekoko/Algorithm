@@ -52,6 +52,7 @@
 - [熄灯问题](doc_B/Violence.md#2熄灯问题)  
 - [讨厌的青蛙](doc_B/Violence.md#3讨厌的青蛙)  
 - [四平方和](doc_B/Violence.md#4四平方和)  
+- [带分数](doc_B/Violence.md#5带分数)
 
 ### 3.循环删除  
 - [猜字母](doc_B/LoopDelete.md#1猜字母)  
