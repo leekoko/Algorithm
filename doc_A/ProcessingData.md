@@ -124,7 +124,7 @@ public static void main(String[] args) {
 [神奇算式](../doc_B/Violence.md#1神奇算式)  
 [熄灯问题](../doc_B/Violence.md#2熄灯问题)  
 [讨厌的青蛙](../doc_B/Violence.md#3讨厌的青蛙) 
-
+[四平方和](../doc_B/Violence.md#4四平方和) 
 ---
 
 ### 拆分法
