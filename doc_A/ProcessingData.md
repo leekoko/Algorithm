@@ -93,7 +93,6 @@ public static void main(String[] args) {
 		System.out.println();
 	}
 ```
-
 [买不到的数目](../doc_B/DifferentNum.md#1买不到的数目)  
 [花朵数](../doc_B/DifferentNum.md#2花朵数)  
 
@@ -126,6 +125,7 @@ public static void main(String[] args) {
 [讨厌的青蛙](../doc_B/Violence.md#3讨厌的青蛙) 
 [四平方和](../doc_B/Violence.md#4四平方和)  
 [带分数](../doc_B/Violence.md#5带分数s)   
+
 ---
 
 ### 拆分法
@@ -146,7 +146,6 @@ public static void main(String[] args) {
 	}
 }
 ```
-``待定：对应的大题``
 
 ---
 
@@ -198,6 +197,7 @@ public static void f(int num) {
 	System.out.println(num);
 }
 ```
+
 方法2：写在筛选条件外边（需要加参数，相比之下，开头更可控）
 
 ```java
@@ -276,7 +276,6 @@ public static int f(int m, int n) {
 		return Math.max(f(st1.substring(1),st2), f(st1,st2.substring(1)));
 	}
 ```
-
 [奇怪的比赛](../doc_B/Recursion.md#1奇怪的比赛)   
 [加法划分](../doc_B/Recursion.md#2加法划分)  
 [绳圈](../doc_B/Recursion.md#3绳圈)  

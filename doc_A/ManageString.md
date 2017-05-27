@@ -1,4 +1,4 @@
-﻿# String字符串处理
+# String字符串处理
 
 这是对String字符串操作的一些方法
 
@@ -20,8 +20,6 @@ public static void main(String[] args) {
 	
 }
 ```
-
-``待定：对应的大题``
 
 ---
 
@@ -45,7 +43,6 @@ public static void cut(String a) {
 	}
 }
 ```
-``待定，对应的大题``
 
 ---
 

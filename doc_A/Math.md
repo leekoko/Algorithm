@@ -53,8 +53,6 @@
 	System.out.println(a.divide(b));
 ``
 
-
-
 ---
 
 ## 3.交叉相乘
@@ -74,8 +72,6 @@ public static void main(String[] args) {
 	}
 }	
 ```
-
-``待定：对应的大题``
 
 ---
 
@@ -123,7 +119,7 @@ public static int f(int num) {
 		}
 		System.out.println(arr[num]);
 	}
-```
+``
 
 ---
 
@@ -207,8 +203,6 @@ public static int f(int a, int b) {
 }
 ```
 
-``待定：对应的大题``
-
 ---
 
 ## 7.尼姆游戏
@@ -234,7 +228,6 @@ public static boolean f(int num) {
 ``` 
 [取球游戏](../doc_B/NimGame.md#1取球游戏)  
 [高僧斗法](../doc_B/NimGame.md#2高僧斗法)
-
 
 ---
 
@@ -262,7 +255,6 @@ public static void main(String[] args) {
 	}
 }
 ```
-``待定大题``
 
 ---
 
@@ -325,7 +317,6 @@ public static void main(String[] args) {
 		}
 	}
 ```
-
 [运算24点数](../doc_B/Random.md#1运算24点数)
 
 ---
