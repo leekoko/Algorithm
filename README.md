@@ -39,9 +39,6 @@
 - [机器人行走](doc_A/Simulation.md#1机器人行走)  
 - [计算机模拟](doc_A/Simulation.md#2计算机模拟)    
 - [图形打印](doc_A/Simulation.md#3图形打印)    
-### 5.数据结构  
-- [栈](doc_A/DataStructure.md#1栈)      
-
 ## 目录（第二部分）
 ### 1.数字互不相同
 - [买不到的数目](doc_B/DifferentNum.md#1买不到的数目)
@@ -93,3 +90,12 @@
 ### 13.栈  
 - [出栈次序](doc_B/Stack.md#1出栈次序)
 - [铁轨](doc_B/Stack.md#2铁轨)
+
+## 目录（第三部分）
+
+### 1.原理题目  
+
+- [栈](doc_A/DataStructure.md#1原理题目)    
+
+### 2.[概念题](doc_A/DataStructure.md#2.概念题)   
+
