@@ -99,4 +99,6 @@
 
 ### 2.[概念题](doc_A/DataStructure.md#2.概念题)   
 
-### 3.[搭积木](doc_A/Build.md)   
+### 3.闲聊蓝桥杯JAVA  
+
+#### 1.[搭积木](doc_A/Build.md)   
