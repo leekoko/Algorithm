@@ -102,3 +102,12 @@
 ### 3.闲聊蓝桥杯JAVA  
 
 #### 1.[搭积木](doc_A/Build.md)   
+
+#### 2.[加法变乘法](doc_A/AddToMul.md)  
+
+#### 3.[暴力破解](doc_A/power.md)     
+
+#### 4.[填空题](doc_A/Fill.md)    
+
+
+
