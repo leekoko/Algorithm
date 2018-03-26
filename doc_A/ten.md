@@ -1,6 +1,6 @@
-# 闲聊蓝桥杯JAVA - 打印十字图
+# 闲聊蓝桥杯JAVA - 打印图形
 
-M:有一点繁琐的题目
+M:有一点繁琐的题目，打印十字图。
 
 ```
 
@@ -80,3 +80,129 @@ $$$.$$$$$$$$$.$$$
 峰值内存消耗（含虚拟机） < 64M
 CPU消耗  < 1000ms
 ```
+Z:这题我做过，以下可供参考。
+
+```java
+public class Main {
+	static char[][] arr;
+	static int bian;
+	static int mid;
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int num=input.nextInt();
+        bian=num*4+5;
+        mid=bian/2;
+        arr=new char[bian][bian];
+
+        init();
+        add(num);
+        show();
+
+    }
+
+    private static void add(int num) {
+        int x=mid-2;
+        int y=mid-2;
+        int index=1;
+        for (int i = 0; i < num; i++) {
+            arr[x][y]='$';
+            for (int j = 0; j < 2; j++) {
+                y--;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < index*4; j++) {
+                x++;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < 2; j++) {
+                y++;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < 2; j++) {
+                x++;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < index*4; j++) {
+                y++;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < 2; j++) {
+                x--;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < 2; j++) {
+                y++;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < index*4; j++) {
+                x--;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < 2; j++) {
+                y--;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < 2; j++) {
+                x--;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < index*4; j++) {
+                y--;
+                arr[x][y]='$';
+            }
+            for (int j = 0; j < 2; j++) {
+                x++;
+                arr[x][y]='$';
+            }
+            index++;
+            x=x-2;
+            y=y-2;
+        }
+    /*	..$$$$$..
+        ..$...$..
+        $$$.$.$$$
+        $...$...$
+        $.$$$$$.$
+        $...$...$
+        $$$.$.$$$
+        ..$...$..
+        ..$$$$$..*/
+
+    }
+
+    public static void show() {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
+    public static void init() {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                arr[i][j]='.';
+            }
+        }
+        for (int i = 0; i < 5; i++) {
+            arr[mid-2+i][mid]='$';
+            arr[mid][mid-2+i]='$';
+        }
+    }
+
+}
+```
+
+M:首先执行的init()方法是干嘛用的？
+
+Z:
+
+
+
+
+
+
+
+
+
