@@ -125,7 +125,9 @@
 
 #### 12.[铁轨](doc_A/rail.md)  
 
-#### 13.[约瑟夫环](doc_A/joseph.md)   
+#### 13.[约瑟夫环](doc_A/joseph.md)      
+
+#### 14.[青蛙跳杯子](doc_A/frog.md)   
 
 
 
