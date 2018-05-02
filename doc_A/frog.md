@@ -1,10 +1,9 @@
 # 闲聊蓝桥杯JAVA - 青蛙跳杯子   
 
-D:
+D:今天完成一道比较新的题目，使用的是dfs
 
 ```
 标题：青蛙跳杯子
-
     X星球的流行宠物是青蛙，一般有两种颜色：白色和黑色。
     X星球的居民喜欢把它们放在一排茶杯里，这样可以观察它们跳来跳去。
     如下图，有一排杯子，左边的一个是空着的，右边的杯子，每个里边有一只青蛙。
@@ -64,5 +63,126 @@ CPU消耗  < 1000ms
     我就发出新的枝条，
     春风拂动那第 5 层的新枝,
     哦，我已是枝繁叶茂。
-
 ```
+
+M:听说这道题是深度优先算法，什么是深度优先算法，今天我一定要搞清楚。 
+
+Z:先看看网友是怎么完成这道题目的：感觉写法蛮规范的   [链接](https://blog.csdn.net/shdhhfhj/article/details/79666397)   
+
+```java
+import java.util.HashSet;  
+import java.util.Scanner;  
+import java.util.Set;  
+  
+public class Main {  
+    static String fs;  
+    static String es;  
+    public static void main(String[] args) {  
+        Scanner in=new Scanner(System.in);  
+        fs=in.nextLine();  
+        es=in.nextLine();  
+        System.out.println(bfs());  
+    }  
+    public static String swap(String c,int i,int j){  
+        char at[]=c.toCharArray();  
+        char t=c.charAt(i);  
+        at[i]=at[j];  
+        at[j]=t;  
+        c=String.valueOf(at);  
+        return c;  
+    }  
+    public static int bfs(){  
+        Set<String>set=new HashSet<String>();  
+        set.add(fs);  
+        int step[]=new int[120000];  
+        step[0]=0;  
+        String q[]=new String[120000];  
+        q[0]=fs;  
+        int l=0,r=1;  
+        while(l<r){  
+            String c=q[l];  
+            String n;  
+            int index=c.indexOf("*");  
+            if(index+1<c.length()){  
+                n=swap(c,index,index+1);  
+                if(!set.contains(n)){  
+                    step[r]=step[l]+1;  
+                    q[r]=n;  
+                    if(n.equals(es)){  
+                        return step[r];  
+                    }  
+                    set.add(n);  
+                    r++;  
+                }  
+            }  
+            if(index+2<c.length()){  
+                n=swap(c,index,index+2);  
+                if(!set.contains(n)){  
+                    step[r]=step[l]+1;  
+                    q[r]=n;  
+                    if(n.equals(es)){  
+                        return step[r];  
+                    }  
+                    set.add(n);  
+                    r++;  
+                }  
+            }  
+            if(index+3<c.length()){  
+                n=swap(c,index,index+3);  
+                if(!set.contains(n)){  
+                    q[r]=n;  
+                    step[r]=step[l]+1;  
+                    if(n.equals(es)){  
+                        return step[r];  
+                    }  
+                    set.add(n);  
+                    r++;  
+                }  
+            }  
+            if(index-1>=0){  
+                n=swap(c,index,index-1);  
+                if(!set.contains(n)){  
+                    step[r]=step[l]+1;  
+                    q[r]=n;  
+                    if(n.equals(es)){  
+                        return step[r];  
+                    }  
+                    set.add(n);  
+                    r++;  
+                }  
+            }  
+            if(index-2>=0){  
+                n=swap(c,index,index-2);  
+                if(!set.contains(n)){  
+                    step[r]=step[l]+1;  
+                    q[r]=n;  
+                    if(n.equals(es)){  
+                        return step[r];  
+                    }  
+                    set.add(n);  
+                    r++;  
+                }  
+            }  
+            if(index-3>=0){  
+                n=swap(c,index,index-3);  
+                if(!set.contains(n)){  
+                    step[r]=step[l]+1;  
+                    q[r]=n;  
+                    if(n.equals(es)){  
+                        return step[r];  
+                    }  
+                    set.add(n);  
+                    r++;  
+                }  
+            }  
+            l++;  
+        }  
+        return -1;  
+    }  
+}  
+```
+
+M:从bfs方法开始，首先为什么要用到``HashSet``呢？   
+
+Z:HashSet的特点就是   不可重复的，仅仅存储对象   
+
