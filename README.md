@@ -40,7 +40,9 @@
 
 #### 5.[约瑟夫环](doc_A/joseph.md)       
 
-#### 6.[九宫幻方](doc_A/NinthPalace.md)
+#### 6.[九宫幻方](doc_A/NinthPalace.md)     
+
+#### 7.[excel地址](doc_A/excel.md)    
 
 
 
