@@ -44,7 +44,9 @@
 
 #### 6.[九宫幻方](doc_A/NinthPalace.md)     
 
-#### 7.[excel地址](doc_A/excel.md)    
+#### 7.[excel地址](doc_A/excel.md)       
+
+#### 8.[生命游戏](doc_A/cells.md)   loading   
 
 
 
@@ -66,11 +68,11 @@
 
 
 
-#### 
+[树形显示](doc_A/tree.md)   
 
 #### 
 
-[生命游戏](doc_A/cells.md)
+
 
 #### 
 

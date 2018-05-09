@@ -1,4 +1,6 @@
+# 生命游戏   
 
+D：新鲜的模拟游戏，可能有点麻烦
 
 ```
 标题：生命游戏
@@ -73,17 +75,9 @@
 注意：需要提交的是一个整数，不要填写多余内容。
 ```
 
+M：我不太理解它图形的变化规律，能让我先了解下代码吗？
 
-
-
-
-
-
-
-
-
-
-https://blog.csdn.net/gzj0078/article/details/79434673
+Z：找到了一个java的  [链接](https://blog.csdn.net/gzj0078/article/details/79434673)   
 
 ```java
 import java.math.BigInteger;  
@@ -314,3 +308,6 @@ class point {
 }  
 ```
 
+M：这道题暂时先搁置，日后再做研究
+
+loading
