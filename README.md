@@ -58,19 +58,15 @@
 
 
 
-##  栈
+##  栈&树
 
 #### 1.[括号问题](doc_A/Fill.md)
 
 #### 2.[铁轨](doc_A/rail.md)
 
+#### 3.[树形显示](doc_A/tree.md)      
 
-
-
-
-[树形显示](doc_A/tree.md)   
-
-#### 
+#### 4.[出栈次序](doc_A/stackOut.md)    
 
 
 
