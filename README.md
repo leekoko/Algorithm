@@ -48,6 +48,8 @@
 
 #### 8.[生命游戏](doc_A/cells.md)   loading   
 
+#### 9.[出栈次序](doc_A/stackOut.md)   
+
 
 
 ## 打印图形
@@ -66,7 +68,7 @@
 
 #### 3.[树形显示](doc_A/tree.md)      
 
-#### 4.[出栈次序](doc_A/stackOut.md)    
+####     
 
 
 
