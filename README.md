@@ -26,7 +26,7 @@
 
 #### 5.[平方十位数](doc_A/tenNum.md)    
 
-
+#### 6.[罗马数字](doc_A/rome.md)  
 
 
 
@@ -48,7 +48,9 @@
 
 #### 8.[生命游戏](doc_A/cells.md)   loading   
 
-#### 9.[出栈次序](doc_A/stackOut.md)   
+#### 9.[出栈次序](doc_A/stackOut.md)     
+
+
 
 
 
@@ -74,7 +76,9 @@
 
 #### 
 
-#### 
+#### [小计算器](doc_A/counter.md) loading  
+
+
 
 #### 
 
