@@ -255,7 +255,7 @@ public class Test {
 
 M：总结一下，这道题主要要知道进制的转化方法：
 
-	1. 10转n：``Integer.toString(firstNum,jinzhi);``   
-	2. n转10：``Integer.parseInt(second,jinzhi);``   
+1. 10转n：``Integer.toString(firstNum,jinzhi);``      
+2. n转10：``Integer.parseInt(second,jinzhi);``   
 
 进制的转化时机，从产品的角度来理解这道题，需要一个有意义的答案，所以都转化为十进制进行运算存储，最后统一转为指定进制的值。

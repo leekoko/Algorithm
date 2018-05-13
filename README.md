@@ -52,7 +52,9 @@
 
 #### 8.[生命游戏](doc_A/cells.md)   loading   
 
-#### 9.[出栈次序](doc_A/stackOut.md)     
+#### 9.[出栈次序](doc_A/stackOut.md)         
+
+#### 10.[小计算器](doc_A/counter.md)     
 
 
 
@@ -78,11 +80,9 @@
 
 
 
-#### 
-
-#### [小计算器](doc_A/counter.md) loading  
-
 ####   
+
+####  [填字母游戏](doc_A/character.md)   
 
 20180513练习
 
