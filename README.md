@@ -12,6 +12,10 @@
 
 #### 2.[青蛙跳杯子](doc_A/frog.md)  loading  
 
+## 递归循环 
+
+#### 1.[算式填符号](doc_A/fillSym.md)   
+
 
 
 ## 暴力破解   
@@ -78,9 +82,7 @@
 
 #### [小计算器](doc_A/counter.md) loading  
 
-
-
-[算式填符号](doc_A/fillSym.md)  
+####   
 
 20180513练习
 
