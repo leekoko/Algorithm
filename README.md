@@ -70,7 +70,7 @@
 
 #### 1.[打印图形](doc_A/img.md)  
 
-
+#### 2.[打印数字](doc_A/printNum.md)  
 
 
 
@@ -86,7 +86,7 @@
 
 
 
-####  [打印数字](doc_A/printNum.md)  
+####    
 
 ####     [七星填数](doc_A/star.md)   
 

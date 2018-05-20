@@ -1,6 +1,6 @@
+# 打印数字   
 
-
-
+D：简单的题目，打印数字
 
 ```
 打印数字
@@ -116,6 +116,6 @@ public class Main
 也不要提交任何说明解释文字等。
 ```
 
+M：所填内容为：``System.out.print( di[Integer.parseInt(new String(cc[j]+""))][i] + " ");  //填空位置``  
 
-
-内容为：``System.out.print( di[Integer.parseInt(new String(cc[j]+""))][i] + " ");  //填空位置``  
+主要是通过尝试试出来的，毕竟是填空题，懒得花太多时间去研究过程。
