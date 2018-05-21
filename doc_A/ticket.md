@@ -1,6 +1,6 @@
+# 赢球票
 
-
-D：
+D：来一道简单的题目
 
 ```
 赢球票
@@ -79,5 +79,93 @@ Z：主要是循环的关系，拿的顺序可以这样：
 全部被拿走，值为 2+1+3=6
 ```
 
+M：刚刚尝试做了一下，由于数组没有回溯，一直找不到问题
 
+```java
+import java.util.Scanner;
+
+/*用户输入：
+3
+2 1 3
+
+程序应该输出：
+6*/
+public class Test{
+	static int maxIn = 0;
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int num  = input.nextInt();
+		int[] arr = new int[num];
+		int max = 0;
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = input.nextInt();
+			if(arr[i] > maxIn){
+				maxIn = arr[i];
+			}
+		}
+		for (int i = 0; i < arr.length; i++) {
+			boolean[] check = new boolean[num];  //回溯标记
+			int result = run(arr, check, i);
+			if(result > max){
+				max = result;
+			}
+		}
+		System.out.println(max);
+	}
+	/**
+	 * 返回手中的牌数
+	 * @param arr      数组
+	 * @param check       标记数组
+	 * @param startPoint   开始数的数组位置
+	 * @return
+	 */
+	private static int run(int[] arr, boolean[] check, int startPoint) {
+		int sum = 0;
+		int numPoint = 1;
+		while(numPoint <= maxIn && hasFalse(check)){
+			startPoint = startPoint % arr.length;    //循環圓圈
+			if(check[startPoint] == false){
+				if(numPoint == arr[startPoint]){
+					sum += arr[startPoint];
+					check[startPoint] = true;
+					numPoint = 1;   //从1开始数
+					startPoint++;
+					continue;
+				}
+				numPoint++;
+			}
+			startPoint++;
+		}
+		return sum;
+	}
+	/**
+	 * 全部都已标记
+	 * @param check
+	 * @return
+	 */
+	private static boolean hasFalse(boolean[] check) {
+		for (int i = 0; i < check.length; i++) {
+			if(check[i] == false){
+				return true;
+			}
+		}
+		return false;
+	}
+		
+}
+```
+
+M：为什么要判断是否全部为false
+
+```java
+		while(numPoint <= maxIn && hasFalse(check)){
+			startPoint = startPoint % arr.length;    //循環圓圈
+			if(check[startPoint] == false){
+```
+
+Z：因为numPoint的控制在``if(check[startPoint] == false){``判断里面，如果不判断的话，可能会进入死循环。所以要在全部都为false的情况下，跳出循环。   
+
+M：怎么处理循环数字？
+
+Z：使用mol就可以了``startPoint = startPoint % arr.length;    //循環圓圈``    
 

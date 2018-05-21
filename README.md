@@ -62,7 +62,9 @@
 
 #### 10.[小计算器](doc_A/counter.md)       
 
-#### 11.[填字母游戏](doc_A/character.md)
+#### 11.[填字母游戏](doc_A/character.md)   
+
+#### 12.[赢球票](doc_A/ticket.md)   
 
 
 
@@ -96,7 +98,7 @@
 
 ####[区间移位](doc_A/areaMove.md)
 
-####   [赢球票](doc_A/ticket.md)  
+####     
 
 
 
