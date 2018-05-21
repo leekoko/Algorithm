@@ -14,7 +14,9 @@
 
 ## 递归循环 
 
-#### 1.[算式填符号](doc_A/fillSym.md)   
+#### 1.[算式填符号](doc_A/fillSym.md)      
+
+#### 2.[组合-全排列](doc_A/full.md)      
 
 
 
@@ -94,11 +96,7 @@
 
 ####[区间移位](doc_A/areaMove.md)
 
-####    
-
-#### 
-
- 
+####   [赢球票](doc_A/ticket.md)  
 
 
 
