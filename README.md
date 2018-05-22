@@ -4,7 +4,9 @@
 
 #### 1.[深度搜索](doc_A/Dfs.md)
 
-#### 2.[搭积木](doc_A/Build.md)
+#### 2.[搭积木](doc_A/Build.md)   
+
+#### 3.[路径之谜](doc_A/riddle.md)
 
 ## 广度搜索   
 
@@ -34,7 +36,11 @@
 
 #### 6.[罗马数字](doc_A/rome.md)  
 
-#### 7.[平方末尾](doc_A/square.md)  
+#### 7.[平方末尾](doc_A/square.md)     
+
+#### 8.[生成回文数](doc_A/backNum.md)   
+
+
 
 
 
@@ -90,7 +96,7 @@
 
 
 
-####    
+
 
 ####     [七星填数](doc_A/star.md)   
 
