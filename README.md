@@ -18,7 +18,9 @@
 
 #### 1.[算式填符号](doc_A/fillSym.md)      
 
-#### 2.[组合-全排列](doc_A/full.md)      
+#### 2.[组合-全排列](doc_A/full.md)        
+
+#### 3.[密文搜索](doc_A/cipher.md)  
 
 
 
@@ -72,6 +74,8 @@
 
 #### 12.[赢球票](doc_A/ticket.md)   
 
+#### 13.[奇怪的数列](doc_A/series.md)  
+
 
 
 
@@ -82,7 +86,7 @@
 
 #### 2.[打印数字](doc_A/printNum.md)  
 
-#### 3.[空心菱形]()  
+#### 3.[空心菱形](doc_A/diamond.md)    
 
 ##  栈&树
 
@@ -96,13 +100,15 @@
 
 
 
-#### [空心菱形](doc_A/diamond.md)  
+#### [生物芯片](doc_A/chip.md) loading
 
 ####     [七星填数](doc_A/star.md)      
 
 20180513练习
 
-####[区间移位](doc_A/areaMove.md)
+####[区间移位](doc_A/areaMove.md)   
+
+####[数字拆分](doc_A/numCut.md) loading 
 
 ####    新题 
 

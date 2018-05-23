@@ -142,9 +142,33 @@ public class Test3 {
 }  
 ```
 
+D：岁数暴力题
 
+```
+public class Test {
+	public static void main(String[] args) {
+		for (int i = 1800; i < 2014; i++) {
+			int num = 2014 - i;
+			if(num == run(i)){
+				System.out.println(i);
+			}
+			
+		}
+		
+	}
 
+	private static int run(int year) {
+		int num = 0;
+		for (int j = 0; j < 4; j++) {
+			num += year%10;
+			year = year/10;
+		}
+		return num;
+	}
+}
+```
 
+M：还好周岁计算是 当前年-出生年，不用+1
 
 
 
