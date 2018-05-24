@@ -10,9 +10,7 @@
 
 ## 广度搜索   
 
-#### 1.[广度搜索](doc_A/Bfs.md)  loading   
-
-#### 2.[青蛙跳杯子](doc_A/frog.md)  loading  
+#### 1.[青蛙跳杯子](doc_A/frog.md)  loading  
 
 ## 递归循环 
 
@@ -21,6 +19,8 @@
 #### 2.[组合-全排列](doc_A/full.md)        
 
 #### 3.[密文搜索](doc_A/cipher.md)  
+
+#### 4.[金蝉素数](doc_A/prime.md)  
 
 
 
@@ -96,23 +96,31 @@
 
 #### 3.[树形显示](doc_A/tree.md)      
 
+### 特殊数处理  
 
+#### 1.[生物芯片](doc_A/chip.md) loading   
 
+#### 2.[稍大的串](doc_A/bigStr.md)       
 
+#### 3.[埃及分数](doc_A/egypt.md)  
 
-#### [生物芯片](doc_A/chip.md) loading
+### 模板   
 
-####     [七星填数](doc_A/star.md)      
+#### 1.[全排列模板](doc_A/allSortModel.md)    
 
-20180513练习
+#### 
 
-####[区间移位](doc_A/areaMove.md)   
+#### [危险系数](doc_A/danger.md)  loading
+
+####     [七星填数](doc_A/star.md)   loading      
+
+####[区间移位](doc_A/areaMove.md) loading   
 
 ####[数字拆分](doc_A/numCut.md) loading 
 
 ####    新题 
 
-
+完善loading内容
 
 
 

@@ -226,7 +226,139 @@ Z:且慢，虽然你想用递归的方式减少了步数统计数组。但是从
 
 所以，要想优化这道题目，我建议你先了解一下广度搜索bfs和深度搜索dfs的使用场景。
 
-D：广度搜索详情查看另外一篇文章。
+M：我编写了一个跳的算法(错误)，但是他会重复跳原来的步骤。要怎么避免重复呢？
+
+```java
+import java.util.Scanner;
+
+public class Main3 {
+	private static String resultStr = "";
+	private static char[] arr = null;
+	private static int min = 2099999999;
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in); 
+		String str = input.next();
+		arr = str.toCharArray();
+		resultStr = input.next();
+		run(0,-1);
+		System.out.println(min);
+	}
+	private static void run(int count, int lastStep) {
+		if(count > min){
+			return;
+		}
+		if(eqalResult()){
+			if(count < min){
+				min = count;
+			}else{
+				return;
+			}
+		}
+		
+		for (int point = 0; point < arr.length; point++) {   
+			if(arr[point] == '*' || point == lastStep){   //沒有青蛙的地方  && 上一步避免重複
+				continue;
+			}
+			//前1
+			if(point-1 >= 0){
+				if(arr[point-1] == '*'){
+					char temp = arr[point];
+					arr[point] = arr[point-1];
+					arr[point-1] = temp;
+					run(++count,point-1);
+					temp = arr[point];
+					arr[point] = arr[point-1];
+					arr[point-1] = temp;
+				}
+			}
+			//前2
+			if(point-2 >= 0){
+				if(arr[point-2] == '*'){
+					char temp = arr[point];
+					arr[point] = arr[point-2];
+					arr[point-2] = temp;
+					run(++count,point-2);
+					temp = arr[point];
+					arr[point] = arr[point-2];
+					arr[point-2] = temp;
+				}
+			}
+			//前3
+			if(point-3 >= 0){
+				if(arr[point-3] == '*'){
+					char temp = arr[point];
+					arr[point] = arr[point-3];
+					arr[point-3] = temp;
+					run(++count,point-3);
+					temp = arr[point];
+					arr[point] = arr[point-3];
+					arr[point-3] = temp;
+				}
+			}
+			//后1
+			if(point+1 <= arr.length-1){
+				if(arr[point+1] == '*'){
+					char temp = arr[point];
+					arr[point] = arr[point+1];
+					arr[point+1] = temp;
+					run(++count,point+1);
+					temp = arr[point];
+					arr[point] = arr[point+1];
+					arr[point+1] = temp;
+				}
+			}
+			//后2
+			if(point+2 <= arr.length-1){
+				if(arr[point+2] == '*'){
+					char temp = arr[point];
+					arr[point] = arr[point+2];
+					arr[point+2] = temp;
+					run(++count,point+2);
+					temp = arr[point];
+					arr[point] = arr[point+2];
+					arr[point+2] = temp;
+				}
+			}
+			//后3
+			if(point+3 <= arr.length-1){
+				if(arr[point+3] == '*'){
+					char temp = arr[point];
+					arr[point] = arr[point+3];
+					arr[point+3] = temp;
+					run(++count,point+3);
+					temp = arr[point];
+					arr[point] = arr[point+3];
+					arr[point+3] = temp;
+				}
+			}
+		}
+		
+
+		
+	}
+	private static boolean eqalResult() {
+		String str = new String(arr);
+		if(str.equals(resultStr)){
+			return true;
+		}
+		return false;
+	}
+
+}
+```
+
+Z：添加set，将跳过的局面存储起来，不要重复执行。
+
+```java
+				if(arr[point-2] == '*' && !(set.contains(new String(arr)))){
+					char temp = arr[point];
+					arr[point] = arr[point-2];
+					arr[point-2] = temp;
+					set.add(new String(arr));
+					run(++count,point-2);
+```
+
+M：但是为什么还是实现不了？
 
 
 
