@@ -106,7 +106,9 @@
 
 ### 模板   
 
-#### 1.[全排列模板](doc_A/allSortModel.md)    
+#### 1.[全排列模板](doc_A/allSortModel.md)        
+
+#### 2.[深度搜索模板](dfsModel.md)
 
 #### 
 
